@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ласкаво просимо на сайт нерухомості</h1>
+      <p>Знайдіть ідеальний будинок або квартиру для себе</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Головна</a></li>
+        <li><a href="appeal.html">Додати оголошення</a></li>
+        <li><a href="/Create/Create.html">Додати Апартаменти</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="w-button">
+        <button id="getDataButton" type="button">Переглянути Квартири</button>
+        <div id="notes-container"></div>
+        <button id="deleteNoteButton" onclick="deleteNote('noteIdToBeDeleted')">
+          Delete House
+        </button>
+      </div>
+
+      <div class="w-button">
+        <button id="getDataButtonHouse" type="button">
+          Переглянути Будинки
+        </button>
+        <div id="notes-container-house"></div>
+        <button
+          id="deleteApartmentsButton"
+          onclick="deleteNote('noteIdToBeDeletedApartmentsі')"
+        >
+          Delete Note
+        </button>
+      </div>
+
+      <div class="w-button">
+        <button id="getDataButtonVilla" type="button">Переглянути Віллу</button>
+        <div id="notes-container-villa"></div>
+        <button
+          id="deleteVillaButton"
+          onclick="deleteNote('noteIdToBeDeletedVilla')"
+        >
+          Delete Villa
+        </button>
+      </div>
+
+      <!-- Custom List -->
+      <ul class="custom-list">
+        <li>Елемент списку 1</li>
+        <li>Елемент списку 2</li>
+        <li>Елемент списку 3</li>
+      </ul>
+
+      <!-- Sample Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Заголовок колонки 1</th>
+            <th>Заголовок колонки 2</th>
+            <th>Заголовок колонки 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Значення 1</td>
+            <td>Значення 2</td>
+            <td>Значення 3</td>
+          </tr>
+          <tr>
+            <td>Значення 4</td>
+            <td>Значення 5</td>
+            <td>Значення 6</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="weather-button">
+      <a href="pogoda.html">
+        <button type="button">Погода</button>
+      </a>
+      <!-- Link to the YouTube video -->
+      <a href="https://www.youtube.com/watch?v=5-6wFD6pBEA" target="_blank">
+        <button type="button">Подивитися відео</button>
+      </a>
+    </div>
+
+    <div id="editModal" style="display: none">
+      <h2>Edit Note</h2>
+      <form onsubmit="submitEditForm(); return false;">
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" required /><br />
+
+        <label for="editSurname">Surname:</label>
+        <input type="text" id="editSurname" required /><br />
+
+        <label for="editPrice">Price:</label>
+        <input type="number" id="editPrice" required /><br />
+
+        <label for="editResidence">Residence:</label>
+        <input type="text" id="editResidence" required /><br />
+
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+
+    <footer>&copy; 2023 Ваша компанія. Усі права захищені.</footer>
+  </body>
+</html>

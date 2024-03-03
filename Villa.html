@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="noteForm" class="apartmentForm">
+      <label for="nameVilla">Ім'я:</label>
+      <input type="text" id="nameVilla" required />
+
+      <label for="surnameVilla">Прізвище:</label>
+      <textarea id="surnameVilla" required></textarea>
+
+      <label for="price">Ціна:</label>
+      <input type="number" id="price" required />
+
+      <label for="residence">Місце знаходження та кількість кімнат</label>
+      <input type="text" id="residence" required />
+      <input type="file" id="photo" accept="image/*" />
+
+      <button type="submit">Create Villa</button>
+
+      <!-- Button to redirect to the Create page -->
+      <a href="Create.html">
+        <button type="button">Create</button>
+      </a>
+    </form>
+
+    <div id="notes-container"></div>
+  </body>
+</html>
