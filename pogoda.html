@@ -3,6 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+        background-image: url("тал.jpg");
+        }
+   /* styles.css */
+
+/* General Styles */
+/* Reset styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Set a light background color */
+}
+
+/* Container */
+.container {
+    background: plum; /* Darker background color */
+    color: #fff;
+    padding: 2rem;
+    width: 60%; /* Slightly wider container */
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: green /* Add a subtle box shadow */
+}
+
+/* Header */
+.weather__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Input */
+input {
+    border: none;
+    background: #444; /* Darker input background color */
+    color: blue;
+    padding: 0.5rem 2rem; /* Slightly shorter padding */
+    border-radius: 5px;
+    outline: none;
+    width: 70%;
+}
+
+input::placeholder {
+    color: #aaa; /* Lighter placeholder text color */
+}
+
+.weather__searchform {
+    position: relative;
+}
+
+.weather__search i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #aaa; /* Lighter icon color */
+}
+
+/* Units */
+.weather__units {
+    font-size: 1.5rem;
+}
+
+.weather__units span {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+/* Body */
+.weather__body {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Forecast */
+.weather__forecast {
+    background: white; /* Darker forecast background color */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+/* Icon */
+.weather__icon img {
+    width: 100px;
+}
+
+/* Temperature */
+.weather__temperature {
+    font-size: 1.75rem;
+    color: #6669ff; /* Set a different color for temperature */
+}
+
+/* MinMax */
+.weather__minmax {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0.5rem;
+    color: #aaa; /* Lighter text color for min/max */
+}
+
+/* Info */
+.weather_info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.weather__card {
+    display: flex;
+    align-items: center;
+    background: white; /* Darker card background color */
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 936px) {
+    .container {
+        width: 90%;
+    }
+
+    .weather__header {
+        flex-direction: column;
+    }
+
+    .weather__units {
+        margin-top: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .weather_info {
+        flex-direction: column;
+    }
+}
+
+
+
+    </style>
     <title>Document</title>
 </head>
 <body>
